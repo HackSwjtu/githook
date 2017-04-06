@@ -28,7 +28,7 @@ if arg[:5] == 'xxoo:':
     message['From'] = Header(mail_user, 'utf-8')
     message['To'] =  Header(str(receivers), 'utf-8')
 
-    subject = 'my test'
+    subject = 'This is a commit log for you!'
     message['Subject'] = Header(subject, 'utf-8')
 
     try:

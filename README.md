@@ -29,6 +29,16 @@ $ curl -s hackswjtu.com/hook.sh | bash
 
 ![](screenshot.png)
 
+## 使用方法
+
+当执行 `git commit` 命令时，在 `-m` 参数尾部加上 ` xxoo:[email id]` 参数（切记 `xxoo` 前面有一个空格），即可立即对 `[email id]@hackswjtu.com` 发送一份提交的 `diff` 日志邮件。例如 *冬瓜* 完成了某一需求的代码并交与 *Andy* 进行 *Coding Review* 则可键入一下命令：
+
+```bash
+$ git commit -m 'Do you have something tonight? xxoo:andy'
+```
+
+commit 提交之后，Andy 的邮箱（`andy@hackswjtu.com`）将会收到一封邮件，即本次提交的所有改动日志。
+
 ## MIT License
 
 Copyright (c) 2017 Hack Swjtu

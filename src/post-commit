@@ -21,7 +21,6 @@ arg = m.split(' ')[-1]
 
 if arg[:5] == 'xxoo:':
     receiver = arg[5:]+'@hackswjtu.com'
-    # 第三方 SMTP 服务
     sender = "robot@hackswjtu.com"
     receivers = [receiver]
 

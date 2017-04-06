@@ -37,6 +37,6 @@ if arg[:5] == 'xxoo:':
         smtpObj.login(mail_user,mail_pass)
         smtpObj.sendmail(sender, receivers, message.as_string())
         smtpObj.quit()
-        print (u"邮件发送至:", receiver)
+        print ("Send the diff email to:", receiver)
     except smtplib.SMTPException,e:
         print (e)
